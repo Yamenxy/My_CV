@@ -33,17 +33,18 @@ ul {
     align-items: center;
     padding-top: 20px;
     justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .menu ul {
-    margin-left: 20px;
+    display: flex;
+    gap: 15px;
 }
 
 .menu ul li {
     display: inline-block;
-    margin-right: 20px;
     cursor: pointer;
-    align-items: center;
 }
 
 .menu ul li a {
@@ -56,12 +57,11 @@ ul {
 
 .header .contact-info {
     color: #fff;
-    margin-right: 20px;
 }
 
 .header .contact-info ul {
     display: flex;
-    justify-content: flex-end;
+    gap: 10px;
 }
 
 .header .contact-info ul li {
@@ -87,13 +87,13 @@ ul {
     position: absolute;
     top: 35%;
     left: 0;
+    width: 100%;
     color: #fff;
     text-align: left;
-    width: 100%;
 }
 
 .app-text {
-    padding-left: 440px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 
@@ -139,8 +139,13 @@ ul {
 
 .social-icons {
     position: absolute;
-    right: 50px;
-    bottom: 2%; 
+    right: 20px;
+    bottom: 2%;
+}
+
+.social-icons ul {
+    display: flex;
+    gap: 10px;
 }
 
 .social-icons ul li {
@@ -166,39 +171,30 @@ ul {
     color: #fff;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
+    .header {
+        height: auto;
+        padding-bottom: 20px;
+    }
+
     .header .navbar {
         flex-direction: column;
         align-items: center;
     }
 
     .menu ul {
-        margin: 0;
-        padding: 0;
-        display: flex;
-        flex-direction: row;
+        flex-direction: column;
         align-items: center;
-    }
-
-    .menu ul li {
-        margin: 0 10px;
-    }
-
-    .header .contact-info {
-        margin: 10px 0;
     }
 
     .header .contact-info ul {
         flex-direction: column;
         align-items: center;
-    }
-
-    .header .contact-info ul li {
-        margin: 5px 0;
+        gap: 5px;
     }
 
     .banner {
-        top: 30%;
+        top: 20%;
         text-align: center;
     }
 
@@ -213,7 +209,6 @@ ul {
 
     .app-text p {
         font-size: 16px;
-        padding-right: 0;
     }
 
     .social-icons {
@@ -222,18 +217,14 @@ ul {
     }
 
     .social-icons ul {
-        display: flex;
-        justify-content: center;
-    }
-
-    .social-icons ul li {
-        margin: 5px;
+        gap: 5px;
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 200px) {
     .header {
         height: auto;
+        padding-bottom: 20px;
     }
 
     .app-text h1 {
@@ -246,5 +237,9 @@ ul {
 
     .primary-btn:before {
         display: none;
+    }
+
+    .social-icons ul {
+        gap: 5px;
     }
 }
