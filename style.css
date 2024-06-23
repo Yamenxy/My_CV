@@ -1,4 +1,3 @@
-/* General Styles */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +17,6 @@ ul {
     list-style: none;
 }
 
-/* Header Styles */
 .header {
     position: relative;
     width: 100%;
@@ -168,7 +166,6 @@ ul {
     color: #fff;
 }
 
-/* Responsive Styles */
 @media screen and (max-width: 768px) {
     .header .navbar {
         flex-direction: column;
